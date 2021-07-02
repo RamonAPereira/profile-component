@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c80f5c1776.js" crossorigin="anonymous"></script>
   <title>Profile Component</title>
 </head>
 
@@ -15,32 +16,37 @@
     <div class="main-container">
       <div class="card">
         <div class="flex-container">
-          <img src="#" alt="">
-          <ul>
-            <li>
-              <h1>John Doe</h1>
-            </li>
-            <li><a href="#">@johndoe</a></li>
-          </ul>
-          <a href="#" class="btn">Editar</a>
+          <div class="profile-container">
+            <div class="profile"></div>
+              <ul class="info">
+                <li>
+                  <h1>John Doe</h1>
+                </li>
+                <li>
+                  <a href="#">@johndoe</a>
+                </li>
+              </ul>
+            </div>
+          <a href="#" class="btn"><i class="fas fa-edit"></i> Editar</a>
         </div>
         <div class="flex-container">
-          <ul>
+          <ul class="box c-projects">
             <li>Projetos</li>
             <li>27</li>
           </ul>
-          <ul>
+          <ul class="box c-stars">
             <li>Estrelas</li>
             <li>302</li>
           </ul>
-          <ul>
-            <li>Seguidores</li>
+          <ul class="box c-followers">
+            <li>Seguidores </li>
             <li>83</li>
           </ul>
         </div>
       </div>
     </div>
   </main>
+  <!--Foto de Andrew Dick no Pexels-->
 </body>
 
 </html>

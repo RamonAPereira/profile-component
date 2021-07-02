@@ -55,6 +55,7 @@ a {
 }
 .profile-container .info {
   padding-left: 0.75rem;
+  text-align: center;
 }
 .flex-container .btn {
   display: inline-block;
@@ -86,4 +87,30 @@ a {
 }
 .flex-container .c-followers {
   background-color: var(--followers);
+}
+@media (max-width: 900px) {
+  .main-container .card {
+    width: 95vw;
+    height: fit-content;
+    padding: 2rem;
+    background: var(--bg-light-color);
+  }
+}
+@media (max-width: 600px) {
+  .card .flex-container,
+  .flex-container .profile-container {
+    flex-direction: column;
+  }
+
+  .main-container .card {
+    height: fit-content;
+    width: 100%;
+  }
+  .card .flex-container {
+    justify-content: start;
+    height: fit-content;
+  }
+  .flex-container .box {
+    width: 60%;
+  }
 }
